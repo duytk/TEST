@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane id="StackPane" alignment="CENTER" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   	   <children>
+   	      <HBox alignment="CENTER" prefHeight="768.0" prefWidth="1368.0">
+   	      	<children>
+   	      		<TreeView fx:id="beanTreeView" editable="true" prefHeight="768.0" prefWidth="218.0" HBox.hgrow="ALWAYS" />
+   	      		<VBox alignment="CENTER" prefHeight="500.0" prefWidth="700.0" HBox.hgrow="ALWAYS">
+   	      			<children>
+   	      				<HBox alignment="CENTER_RIGHT" maxHeight="40.0" prefHeight="35.0" prefWidth="200.0" spacing="10.0" VBox.vgrow="ALWAYS">
+   	      					<children>
+   	      						<TextField prefHeight="32.0" prefWidth="304.0" />
+   	      						<Button mnemonicParsing="false" prefHeight="32.0" prefWidth="82.0" text="Tìm" />
+   	      					</children>
+                     <VBox.margin>
+                        <Insets right="5.0" />
+                     </VBox.margin>
+   	      				</HBox>
+   	      				
+   	      				<HBox maxHeight="40.0" prefHeight="35.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+      <children>
+   	   	      				<HBox alignment="CENTER_LEFT" maxHeight="40.0" prefHeight="35.0" prefWidth="200.0" spacing="15.0" HBox.hgrow="ALWAYS">
+   	   	      					<children>
+   	   	      						<Button fx:id="backButton" mnemonicParsing="false" onAction="#backAction" prefHeight="35.0" prefWidth="75.0" text="Quay lại" />
+   	   	      						<Button fx:id="addButton" onAction="#handleNew" mnemonicParsing="false" prefHeight="35.0" prefWidth="75.0" text="Thêm" />
+   	   	      						<Button fx:id="editButton" mnemonicParsing="false" onAction="#editAction" prefHeight="35.0" prefWidth="75.0" text="Sửa" />
+   	   	      						<Button fx:id="delButton" mnemonicParsing="false" prefHeight="35.0" prefWidth="75.0" text="Xoá" />
+   	   	      						<Button mnemonicParsing="false" prefHeight="35.0" prefWidth="75.0" text="Nén" />
+   	   	      						<Button mnemonicParsing="false" prefHeight="35.0" prefWidth="75.0" text="Giải nén" />
+   	   	      					</children>
+                           <HBox.margin>
+                              <Insets bottom="4.0" left="5.0" />
+                           </HBox.margin>
+   	   	      				</HBox>
+   	   	      				<Button mnemonicParsing="false" prefHeight="35.0" prefWidth="75.0" text="Đăng xuất">
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </Button>
+      </children>
+	   	      			</HBox>
+
+   	      				<VBox alignment="CENTER" VBox.vgrow="ALWAYS">
+   	      					<children>
+   	      						<TextField prefHeight="32.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin></TextField>
+   	      						<ListView fx:id="listFolderView" prefHeight="620.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+   	      					</children>
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </VBox.margin>
+   	      				</VBox>
+   	      			</children>
+   	      		</VBox>
+   	      		<ListView prefHeight="500.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+   	      	</children>
+   	      </HBox>
+   	   </children>
+   	</StackPane>
